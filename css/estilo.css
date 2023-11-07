@@ -1,77 +1,49 @@
 body{
-  padding: 0;
-  margin: 0;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #282c34;
+  color: #fafafa;
 }
-
-.header {
-  background-color: #282c34;
-  min-height: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  max-width: 100%;
-}
-
 
 .row{
   display: flex;
-  background-color: #282c34;
-  max-width: 100%;
-  max-height:400px;
-  color: #fff;
-}
-
-img{
-  border-radius: 50%;
-  width: 100%;
 }
 
 .img{
   width: 20%;
 }
 
+img{
+  width: 100%;
+  border-radius: 50%;
+}
+
 .name{
   width: 80%;
 }
 
-body > header > div > div.name > h1{
+.nome{
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin-top: 14%;
-  height: 100%;
+  margin-top: 15%;
+}
+
+section{
   width: 100%;
-}
-
-.section{
-  background-color: #282c34;
-  min-height: 50px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  max-width: 100%;
+  margin-top: 5%;
   text-align: center;
 }
 
-#contato{
-  color:white;
-  font-weight: 400;
-}
-
-
-
-a{
-  color:blue;
-  font-weight: 400;
-}
-
-.link {
-  color: #fff;
+@media screen and(max-width: 545px) {
+  section{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+    text-align: center;
+  }
 }
