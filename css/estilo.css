@@ -1,3 +1,9 @@
+body{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
 .header {
   background-color: #282c34;
   min-height: 50px;
@@ -12,47 +18,36 @@
 
 
 .row{
-
+  display: flex;
   background-color: #282c34;
-  max-width: 100.9%;
+  max-width: 100%;
   max-height:400px;
-
+  color: #fff;
 }
 
-.col-6{
-
-  background-color: #282c34;
-  color: white;
-  max-width: 100%
-  
-  
-
-
+img{
+  border-radius: 50%;
+  width: 100%;
 }
 
-.col-img{
-
-  max-width: 300px;
- 
-
-
+.img{
+  width: 20%;
 }
 
+.name{
+  width: 80%;
+}
 
-
-
-
-.nome{
-
-  text-align: left;
-  padding-top: 170px;
-  padding-left: 180px;
-
-  
+body > header > div > div.name > h1{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14%;
+  height: 100%;
+  width: 100%;
 }
 
 .section{
-
   background-color: #282c34;
   min-height: 50px;
   display: flex;
@@ -63,22 +58,19 @@
   color: white;
   max-width: 100%;
   text-align: center;
-
-
 }
 
 #contato{
   color:white;
   font-weight: 400;
-  
 }
+
+
 
 a{
   color:blue;
   font-weight: 400;
 }
-
-
 
 .link {
   color: #fff;

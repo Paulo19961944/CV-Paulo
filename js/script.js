@@ -4,7 +4,7 @@ let idadeCV = document.getElementById("idade");
 /**  Criando um objeto Date com a data e hora atuais */
 const dataAtual = new Date();
 
-/**  Obtendo informações da data e hora atual */
+/** Obtendo informações da data e hora atual */
 const anoAtual = dataAtual.getFullYear();
 const mesAtual = dataAtual.getMonth();
 const diaAtual = dataAtual.getDate();
