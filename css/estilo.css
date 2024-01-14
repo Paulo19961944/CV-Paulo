@@ -2,32 +2,36 @@ body{
   width: 100%;
   margin: 0;
   padding: 0;
-  background: #282c34;
-  color: #fafafa;
+  background: white url("../img/Textura.jpg");
+  color: #000;
+  font-family: "Roboto", sans-serif;
+}
+
+h1, strong, b{
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
 }
 
 .row{
   display: flex;
-}
-
-.img{
-  width: 20%;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
 }
 
 img{
-  width: 100%;
+  width: 18%;
+  margin-top: 2%;
+  margin-left: 1%;
   border-radius: 50%;
 }
 
-.name{
-  width: 80%;
-}
-
 .nome{
+  width: 82%;
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin-top: 15%;
+  font-size: 38px;
 }
 
 section{
@@ -38,7 +42,9 @@ section{
   text-align: center;
 }
 
-@media screen and(max-width: 545px) {
+
+
+@media screen and (max-width: 545px) {
   section{
     width: 100%;
     align-items: center;
