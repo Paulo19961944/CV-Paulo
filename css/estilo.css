@@ -8,7 +8,7 @@ body{
 }
 
 h1, strong, b{
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 
@@ -31,7 +31,7 @@ img{
   text-align: center;
   justify-content: center;
   align-items: center;
-  font-size: 38px;
+  font-size: 42px;
 }
 
 section{
