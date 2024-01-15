@@ -1,40 +1,49 @@
-body{
+body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background: white url("../img/Textura.jpg");
+  background: linear-gradient(to bottom, #f0ffff, #d5f9e3, #e7ffff);
   color: #000;
-  font-family: "Roboto", sans-serif;
+  font-family: "Arial", sans-serif; /* Alterei a fonte para Arial */
 }
 
-h1, strong, b{
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+h1, strong, b {
+  font-family: "Arial", sans-serif; /* Alterei a fonte para Arial */
+  font-weight: 600;
 }
 
-.row{
+b, strong{
+  font-style: italic;
+}
+
+h1{
+  font-size: 32px;
+}
+
+.row {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
 }
 
-img{
+img {
   width: 18%;
   margin-top: 2%;
   margin-left: 1%;
   border-radius: 50%;
 }
 
-.nome{
+.nome {
   width: 82%;
   text-align: center;
   justify-content: center;
   align-items: center;
-  font-size: 42px;
+  font-size: 38px;
+  color: #333;
 }
 
-section{
+section {
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -42,10 +51,8 @@ section{
   text-align: center;
 }
 
-
-
 @media screen and (max-width: 545px) {
-  section{
+  section {
     width: 100%;
     align-items: center;
     justify-content: center;
