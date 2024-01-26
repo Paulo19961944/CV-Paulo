@@ -2,13 +2,13 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #f0ffff, #d5f9e3, #e7ffff);
-  color: #000;
-  font-family: "Arial", sans-serif; /* Alterei a fonte para Arial */
+  background-color: var(--bg-color-white);
+  color: var(--bg-color-black);
+  font-family: "Roboto", sans-serif;
 }
 
 h1, strong, b {
-  font-family: "Arial", sans-serif; /* Alterei a fonte para Arial */
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
 }
 
@@ -20,7 +20,7 @@ h1{
   font-size: 32px;
 }
 
-.row {
+header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -32,6 +32,8 @@ img {
   margin-top: 2%;
   margin-left: 1%;
   border-radius: 50%;
+  border: 2px solid var(--bg-color-black);
+  box-shadow: 0.5px 0.5px var(--bg-color-black);
 }
 
 .nome {
@@ -40,7 +42,7 @@ img {
   justify-content: center;
   align-items: center;
   font-size: 38px;
-  color: #333;
+  color: var(--bg-color-black);
 }
 
 section {
