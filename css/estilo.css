@@ -17,7 +17,7 @@ b, strong{
 }
 
 h1{
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 header {
@@ -51,14 +51,4 @@ section {
   justify-content: center;
   margin-top: 5%;
   text-align: center;
-}
-
-@media screen and (max-width: 545px) {
-  section {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20%;
-    text-align: center;
-  }
 }
