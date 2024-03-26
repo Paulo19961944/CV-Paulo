@@ -11,9 +11,10 @@ const dataNascimento = new Date(1996, 3, 24);
 let idade = date.getFullYear() - dataNascimento.getFullYear();
 
 // Condicional para pegar a idade 
-if (date.getMonth() < dataNascimento.getMonth() || date.getDate() < dataNascimento.getDate()) {
+if (date.getMonth() > dataNascimento.getMonth() || date.getDate() > dataNascimento.getDate()) {
   idade--;
 }
+console.log(idade)
 
 //Cria um Elemento Strong 
 let strongElement = document.createElement("strong");
