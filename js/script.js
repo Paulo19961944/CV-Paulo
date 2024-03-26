@@ -1,33 +1,25 @@
-/** Captura a ID */
+// Captura a ID 
 let idadeCV = document.getElementById("idade");
 
-/**  Criando um objeto Date com a data e hora atuais */
-const dataAtual = new Date();
+// Criando um objeto Date com a data e hora atuais
+const date = new Date();
 
-/** Obtendo informações da data e hora atual */
-const anoAtual = dataAtual.getFullYear();
-const mesAtual = dataAtual.getMonth();
-const diaAtual = dataAtual.getDate();
+// Criando um objeto Date para a Data de Nascimento
+const dataNascimento = new Date(1996, 4, 24);
 
-/* Criando um objeto Date para a Data de Nascimento */
-let dataNascimento = new Date(1996, 4, 24);
+// Calcula a Idade 
+let idade = date.getFullYear() - dataNascimento.getFullYear();
 
-/** Calcula a Idade */
-const anoNascimento = dataNascimento.getFullYear();
-const mesNascimento = dataNascimento.getMonth();
-const diaNascimento = dataNascimento.getDate();
-let idade = anoAtual - anoNascimento;
-
-/** Condicional para pegar a idade */
-if (mesAtual < mesNascimento || (mesAtual === mesNascimento && diaAtual < diaNascimento)) {
+// Condicional para pegar a idade 
+if (date.getMonth() < dataNascimento.getMonth() || date.getDate() < dataNascimento.getDate()) {
   idade--;
 }
 
-/** Deixa o texto em negrito */
+//Cria um Elemento Strong 
 let strongElement = document.createElement("strong");
 strongElement.textContent = "Idade: ";
 idadeCV.appendChild(strongElement);
 
-/** Adiciona a idade */
-let idadeHTML = document.createTextNode(idade + " Anos");
+// Adiciona a idade
+let idadeHTML = document.createTextNode(`${idade} Anos`);
 idadeCV.appendChild(idadeHTML);
