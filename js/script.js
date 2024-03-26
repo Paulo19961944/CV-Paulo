@@ -5,13 +5,13 @@ let idadeCV = document.getElementById("idade");
 const date = new Date();
 
 // Criando um objeto Date para a Data de Nascimento
-const dataNascimento = new Date(1996, 4, 24);
+const dataNascimento = new Date(1996, 3, 24);
 
 // Calcula a Idade 
 let idade = date.getFullYear() - dataNascimento.getFullYear();
 
 // Condicional para pegar a idade 
-if (date.getMonth() < dataNascimento.getMonth() || date.getDate() < dataNascimento.getDate()) {
+if (date.getMonth()< dataNascimento.getMonth() || date.getDate() < dataNascimento.getDate()) {
   idade--;
 }
 
