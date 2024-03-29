@@ -4,7 +4,7 @@ body {
   padding: 0;
   background-color: var(--bg-color-white);
   color: var(--bg-color-black);
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-roboto);
 }
 
 a{
@@ -17,7 +17,7 @@ h2{
 }
 
 h2, strong, b {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-roboto);
   font-weight: 600;
 }
 
