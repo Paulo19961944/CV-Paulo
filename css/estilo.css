@@ -57,12 +57,12 @@ section {
   text-align: center;
 }
 
-.whatsapp{
-  animation: pulse 1.2s  infinite ease-in-out;
+img.whatsapp{
+  animation: pulse 1.2s infinite ease-in-out;
   position: fixed;
   bottom: -30px;
   right: -20px;
-  width: 184px;
+  width: 200px;
   box-shadow: none;
   border: none;
 }
