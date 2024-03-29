@@ -50,6 +50,10 @@
 }
 
 @media screen and (max-width: 475px) {
+  .nome, h2{
+    font-size: 1.068rem;
+  }
+  
   header{
     height: 160px;
   }
