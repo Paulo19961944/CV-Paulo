@@ -7,6 +7,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a{
+  color: blue;
+}
+
 h1, strong, b {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -51,4 +55,32 @@ section {
   justify-content: center;
   margin-top: 5%;
   text-align: center;
+}
+
+.whatsapp{
+  animation: pulse 1.2s  infinite ease-in-out;
+  position: fixed;
+  bottom: -30px;
+  right: -20px;
+  width: 184px;
+  box-shadow: none;
+  border: none;
+}
+
+.whatsapp:hover{
+  cursor: pointer;
+}
+
+@keyframes pulse{
+  0%{
+    transform: scale(1);
+  }
+
+  50%{
+    transform: scale(1.05);
+  }
+
+  100%{
+    transform: scale(1);
+  }
 }
