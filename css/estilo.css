@@ -11,7 +11,12 @@ a{
   color: blue;
 }
 
-h1, strong, b {
+h2{
+  font-size: 1.8rem;
+  margin: 64px 0;
+}
+
+h2, strong, b {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
 }
@@ -20,11 +25,8 @@ b, strong{
   font-style: italic;
 }
 
-h1{
-  font-size: 2rem;
-}
-
 header {
+  height: 216px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -32,15 +34,15 @@ header {
 }
 
 img {
-  width: 18%;
-  margin-top: 2%;
-  margin-left: 1%;
+  width: 200px;
+  margin-left: 16px;
   border-radius: 50%;
   border: 2px solid var(--bg-color-black);
   box-shadow: 0.5px 0.5px var(--bg-color-black);
 }
 
 .nome {
+  font-size: 2.02rem;
   width: 82%;
   text-align: center;
   justify-content: center;
@@ -55,6 +57,11 @@ section {
   justify-content: center;
   margin-top: 5%;
   text-align: center;
+}
+
+.links-site, .links-certificados{
+  margin: 24px;
+  display: block;
 }
 
 img.whatsapp{
