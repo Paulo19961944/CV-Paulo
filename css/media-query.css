@@ -1,74 +1,9 @@
-@media screen and (max-width: 1024px) {
-  header{
-    height: 200px;
-  }
+/* Media Queries - Bootstrap 5 já é responsivo */
+/* Apenas ajustes mínimos se necessário */
 
-  img{
-    width: 160px;
-  }
-
-  .nome{
-    font-size: 1.8rem;
-  }
-
-  h2{
-    font-size: 1.6rem;
+@media (max-width: 576px) {
+  .header-section .nome {
+    font-size: 1.3rem !important;
   }
 }
 
-@media screen and (max-width: 848px) {
-  .nome{
-    font-size: 1.51rem;
-  }
-
-  h2{
-    font-size: 1.35rem;
-  }
-}
-
-
-@media screen and (max-width: 744px) {
-  img{
-    width: 120px;
-  }
-}
-
-
-@media screen and (max-width: 657px) {
-  .nome, h2{
-    margin: 48px 16px;
-    font-size: 1.2rem;
-  } 
-
-  p, a{
-    font-size: 0.75rem;
-  }
-
-  img.whatsapp {
-    width: 160px; 
-  }
-}
-
-@media screen and (max-width: 475px) {
-  .nome, h2{
-    font-size: 1.068rem;
-  }
-
-  header{
-    height: 152px;
-  }
-
-  img.whatsapp{
-    width: 144px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  img{
-    width: 80px;
-  } 
-
-  img.whatsapp{
-    width: 136px;
-  }
-}

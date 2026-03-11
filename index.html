@@ -3,93 +3,258 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV Paulo</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/var.css">
+  <title>Currículo - Paulo Henrique Azevedo do Nascimento</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/estilo.css">
-  <link rel="stylesheet" href="css/media-query.css">
 </head>
 <body>
-  <header>
-    <img src="img/Paulo.jpg" alt="Foto do Paulo">
-    <h1 class="nome">Paulo Henrique Azevedo do Nascimento</h1>
+  <!-- Header / Hero Section -->
+  <header class="header-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-3 text-center">
+          <img src="img/Paulo.jpg" alt="Foto do Paulo" class="profile-img">
+        </div>
+        <div class="col-md-9">
+          <h1 class="nome">Paulo Henrique Azevedo do Nascimento</h1>
+          <p class="subtitle">Analista de Sistemas | Desenvolvedor Full Stack</p>
+          <div class="contact-info mt-3">
+            <span class="me-3"><i class="fas fa-phone"></i> (11) 4198-5653</span>
+            <span class="me-3"><i class="fab fa-whatsapp"></i> (11) 94698-3429</span>
+            <span><i class="fas fa-envelope"></i> nascimentopaulo804@gmail.com</span>
+          </div>
+          <div class="location mt-2">
+            <i class="fas fa-map-marker-alt"></i> Rua Capricórnio, 607, Parque Santana - Santana de Parnaíba-SP
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <section class="section">
-    <p id="idade"></p>
-    <p><b>Estado Civil:</b> Solteiro</p>
+  <div class="container py-4">
+    <div class="row">
+      <!-- Sidebar Left -->
+      <div class="col-lg-4 mb-4">
+        <!-- Informações Pessoais -->
+        <div class="card shadow-sm mb-4">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0"><i class="fas fa-user me-2"></i>Informações Pessoais</h5>
+          </div>
+          <div class="card-body">
+            <p class="mb-2"><strong>Estado Civil:</strong> Solteiro</p>
+            <p class="mb-0"><strong>Idade:</strong> <span id="idade"></span></p>
+          </div>
+        </div>
 
-    <div class="link">
-      <p><b>Telefones: </b> (11) 4198-5653 ou <a class="contato"
-          href="https://wa.link/lcvj5k" target="_blank" rel="noopener noreferrer">(11)
-          94698-3429</a></p>
-      <p><b>E-mail:</b><a class="contato" href="mailto:nascimentopaulo804@gmail.com"> nascimentopaulo804@gmail.com</a></p>
+        <!-- Habilidades Técnicas -->
+        <div class="card shadow-sm mb-4">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0"><i class="fas fa-code me-2"></i>Habilidades Técnicas</h5>
+          </div>
+          <div class="card-body">
+            <div class="skill-tags">
+              <span class="badge bg-secondary">C / C++</span>
+              <span class="badge bg-secondary">HTML / CSS</span>
+              <span class="badge bg-secondary">JavaScript</span>
+              <span class="badge bg-secondary">Bootstrap</span>
+              <span class="badge bg-secondary">jQuery</span>
+              <span class="badge bg-secondary">React</span>
+              <span class="badge bg-secondary">Python</span>
+              <span class="badge bg-secondary">AWS</span>
+              <span class="badge bg-secondary">Git / GitHub</span>
+              <span class="badge bg-secondary">Excel</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificados -->
+        <div class="card shadow-sm mb-4">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0"><i class="fas fa-certificate me-2"></i>Certificados</h5>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="https://www.credly.com/badges/cb190959-a9f5-4fd7-9ac9-3878a52e907d" target="_blank" class="text-decoration-none">
+                  <i class="fas fa-external-link-alt me-1"></i>AWS Cloud Foundational
+                </a>
+              </li>
+              <li class="mb-0">
+                <a href="https://www.credly.com/badges/895cc03a-5457-4220-ba96-8b6dcf60520d" target="_blank" class="text-decoration-none">
+                  <i class="fas fa-external-link-alt me-1"></i>CCNA v7 - Introduction to Networks
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Links Importantes -->
+        <div class="card shadow-sm">
+          <div class="card-header bg-primary text-white">
+            <h5 class="card-title mb-0"><i class="fas fa-link me-2"></i>Links Importantes</h5>
+          </div>
+          <div class="card-body">
+            <div class="d-grid gap-2">
+              <a href="https://sites.google.com/view/phsitedeveloper/in%C3%ADcio" target="_blank" class="btn btn-outline-primary btn-sm">
+                <i class="fas fa-globe me-2"></i>Site Desenvolvedor Web
+              </a>
+              <a href="https://paulo19961944.github.io/Portfolio-PH/" target="_blank" class="btn btn-outline-primary btn-sm">
+                <i class="fas fa-briefcase me-2"></i>Portfólio Profissional
+              </a>
+              <a href="https://wa.link/lcvj5k" target="_blank" class="btn btn-success">
+                <i class="fab fa-whatsapp me-2"></i>Fale pelo WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="col-lg-8">
+        <!-- Objetivo -->
+        <div class="card shadow-sm mb-4">
+          <div class="card-header bg-white border-bottom">
+            <h4 class="mb-0"><i class="fas fa-bullseye text-primary me-2"></i>Objetivo</h4>
+          </div>
+          <div class="card-body">
+            <p class="mb-0">Tenho como objetivo atuar na Área da Tecnologia da Informação, buscando sempre desenvolver soluções inovadoras e contribuir para o crescimento da empresa.</p>
+          </div>
+        </div>
+
+        <!-- Formação Acadêmica -->
+        <div class="card shadow-sm mb-4">
+          <div class="card-header bg-white border-bottom">
+            <h4 class="mb-0"><i class="fas fa-graduation-cap text-primary me-2"></i>Formação Acadêmica</h4>
+          </div>
+          <div class="card-body">
+            <div class="timeline">
+              <div class="timeline-item mb-4">
+                <h5 class="mb-1">Análise e Desenvolvimento de Sistemas</h5>
+                <p class="text-muted mb-1">Estácio de Sá</p>
+                <span class="badge bg-success">Conclusão: 2024</span>
+              </div>
+              <hr>
+              <div class="timeline-item mb-4">
+                <h5 class="mb-1">Técnico em Eletroeletrônica</h5>
+                <p class="text-muted mb-1">Senai Prof Conde José Vicente de Azevedo</p>
+                <span class="badge bg-success">Concluído: 2022</span>
+              </div>
+              <hr>
+              <div class="timeline-item">
+                <h5 class="mb-1">Ensino Médio</h5>
+                <p class="text-muted mb-1">Instituto Universal Brasileiro</p>
+                <span class="badge bg-success">Concluído: 2019</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cursos e Qualificações -->
+        <div class="card shadow-sm mb-4">
+          <div class="card-header bg-white border-bottom">
+            <h4 class="mb-0"><i class="fas fa-laptop-code text-primary me-2"></i>Cursos e Qualificações</h4>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <div class="course-item">
+                  <h6 class="mb-1">Design de Jogos Digitais</h6>
+                  <p class="text-muted small mb-1">Senai Prof Vicente Amato</p>
+                  <span class="badge bg-info">2024</span>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="course-item">
+                  <h6 class="mb-1">Web Designer - Front End</h6>
+                  <p class="text-muted small mb-1">Senai José Ephim Mindlin</p>
+                  <span class="badge bg-info">2024</span>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="course-item">
+                  <h6 class="mb-1">Excel Básico</h6>
+                  <p class="text-muted small mb-1">Senai José Ephim Mindlin</p>
+                  <span class="badge bg-info">2024</span>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="course-item">
+                  <h6 class="mb-1">Programação Java</h6>
+                  <p class="text-muted small mb-1">Senai Prof Vicente Amato</p>
+                  <span class="badge bg-info">2023</span>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="course-item">
+                  <h6 class="mb-1">AWS Cloud Practitioner Foundational</h6>
+                  <p class="text-muted small mb-1">Senai Prof Vicente Amato</p>
+                  <span class="badge bg-info">2023</span>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="course-item">
+                  <h6 class="mb-1">CCNA v7 - Introduction to Networks</h6>
+                  <p class="text-muted small mb-1">Senai Prof Vicente Amato</p>
+                  <span class="badge bg-info">2023</span>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="course-item">
+                  <h6 class="mb-1">Lógica de Programação</h6>
+                  <p class="text-muted small mb-1">Senai Prof Vicente Amato</p>
+                  <span class="badge bg-info">2023</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="course-item">
+                  <h6 class="mb-1">Tecnologia da Informação e Comunicação</h6>
+                  <p class="text-muted small mb-1">Senai Prof Vicente Amato</p>
+                  <span class="badge bg-info">2021</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Informações Complementares -->
+        <div class="card shadow-sm">
+          <div class="card-header bg-white border-bottom">
+            <h4 class="mb-0"><i class="fas fa-info-circle text-primary me-2"></i>Informações Complementares</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item px-0"><i class="fas fa-check text-success me-2"></i>Conhecimento em Linguagem C e C++</li>
+              <li class="list-group-item px-0"><i class="fas fa-check text-success me-2"></i>Conhecimento em HTML, CSS, JavaScript</li>
+              <li class="list-group-item px-0"><i class="fas fa-check text-success me-2"></i>Conhecimento em Bootstrap, jQuery, Font Awesome e React</li>
+              <li class="list-group-item px-0"><i class="fas fa-check text-success me-2"></i>Conhecimento em Python</li>
+              <li class="list-group-item px-0"><i class="fas fa-check text-success me-2"></i>Conhecimento em AWS</li>
+              <li class="list-group-item px-0"><i class="fas fa-check text-success me-2"></i>Conhecimento em GitHub e GitHub Pages</li>
+              <li class="list-group-item px-0"><i class="fas fa-car text-primary me-2"></i>CNH Categoria AB</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <p><b>Endereço:</b> Rua Capricórnio, 607, Parque Santana - Santana de Parnaíba-SP</p>
-    <h2>Objetivo</h2>
-    <p>Tenho como Objetivo Atuar na Área da Tecnologia Da Informação</p>
-    
-    <h2>Formação Acadêmica</h2>
-    
-    <p>=> <b>Ensino Médio Completo</b></p>
-    <p>Instituto Universal Brasileiro</p>
-    <p>Concluído em 2019</p><br>
-    
-    <p>=> <b> Técnico em Eletroeletrônica</b></p>
-    <p>Senai Prof Conde José Vicente de Azevedo</p>
-    <p>Concluído em 2022</p><br>
-    <p>=> <b> Análise e Desenvolvimento de Sistemas</b></p>
-    <p>Estacío dé Sá</p>
-    <p>Conclusão em 2024</p><br>
-    
-    <h2>Curso / Qualificações</h2>
-    <p>=><b> Competência Transversal - Tecnologia da Informação e Comunicação</b></p>
-    <p>Senai Prof Vicente Amato</p>
-    <p>Concluído em 2021</p><br>
-    
-    <p>=><b> Competência Transversal - Lógica de Programação</b></p>
-    <p>Senai Prof Vicente Amato</p>
-    <p>Concluído em 2023</p><br>
-    <p>=><b> CCNA v7 - Introdution to Networks</b></p>
-    <p>Senai Prof Vicente Amato</p>
-    <p>Concluído em 2023</p><br>
-    <p>=><b> Implantação de Serviços em Nuvem - AWS Cloud Pratictioner Foundational</b></p>
-    <p>Senai Prof Vicente Amato</p>
-    <p>Concluído em 2023</p><br>
-    <p>=><b> Programação Java</b></p>
-    <p>Senai Prof Vicente Amato</p>
-    <p>Concluído em 2023</p><br>
-    <p>=><b> Excel Básico</b></p>
-    <p>Senai José Ephim Mindlin</p>
-    <p>Concluído em 2024</p><br>
-    <p>=><b> Web Designer - Front End</b></p>
-    <p>Senai José Ephim Mindlin</p>
-    <p>Concluído em 2024</p><br>
-    <p>=><b> Design de Jogos Digitais</b></p>
-    <p>Senai Prof Vicente Amato</p>
-    <p>Conclusão em 2024</p><br>
-    
-    <h2>Informações Complementares</h2>
-    <p>=><b> Conhecimento em Linguagem C e C++</b>
-    <p>=><b> Conhecimento em HTML, CSS, JavaScript</b>
-    <p>=><b> Conhecimento em Bootstrap, Jquery, Font Awsome e React</b></p>
-    <p>=><b> Conhecimento em Python</b></p>
-    <p>=><b> Conhecimento em AWS</b></p>
-    <p>=><b> Conhecimento em Github e Github Pages</b></p>
-    <p>=><b> CNH Categoria AB</b></p>
+  <!-- Footer -->
+  <footer class="footer text-center py-3 mt-4">
+    <div class="container">
+      <p class="mb-0">Currículo desenvolvido por Paulo Henrique Azevedo do Nascimento</p>
+    </div>
+  </footer>
 
-    <h2>Certificados</h2>
-    <a href="https://www.credly.com/badges/cb190959-a9f5-4fd7-9ac9-3878a52e907d" target="blank" rel="noopener noreferrer" class="links-certificados">AWS Cloud Foundational</a>
-    <a href="https://www.credly.com/badges/895cc03a-5457-4220-ba96-8b6dcf60520d" target="blank" rel="noopener noreferrer" class="links-certificados">CCNA v7 - Introduction to
-      Networks</a>
-    <h2>Site Desenvolvedor e Portifólio</h2>
-    <a href="https://sites.google.com/view/phsitedeveloper/in%C3%ADcio" target="blank" rel="noopener noreferrer" class="links-site">Site Desenvolvedor Web</a>
-    <a href="https://paulo19961944.github.io/Portfolio-PH/" target="blank" rel="noopener noreferrer" class="links-site">Portifólio Profissional</a>
-    <a href="https://wa.link/lcvj5k" target="_blank" rel="noopener noreferrer"><img src="img/Whatsapp.png" alt="Chame-nos pelo Whatsapp" class="whatsapp"></a>
-  </section>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
   <script src="js/script.js"></script>
 </body>
 </html>
+

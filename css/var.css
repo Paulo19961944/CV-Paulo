@@ -1,5 +1,5 @@
-:root{
-    --bg-color-white: #fafafa;
-    --bg-color-black: #000;
-    --font-roboto: Roboto, sans-serif;
+/* Variáveis - Mantido para compatibilidade */
+:root {
+  --primary-color: #0d6efd;
 }
+
