@@ -83,6 +83,7 @@ body {
   padding: 8px 12px;
   margin: 4px 2px;
   font-weight: 500;
+  border-radius: 20px;
 }
 
 /* Timeline */
