@@ -172,3 +172,109 @@ body {
   }
 }
 
+/* ========================================
+   PRINT - CURRÍCULO PAULO
+   ======================================== */
+@media print {
+
+  /* Força cores e backgrounds */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    background: white !important;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Remove efeitos que não fazem sentido no papel */
+  .card {
+    box-shadow: none !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Mantém header com gradiente (forçado) */
+  .header-section {
+    background: linear-gradient(135deg, #0d6efd 0%, #198754 100%) !important;
+    color: white !important;
+    -webkit-print-color-adjust: exact !important;
+  }
+
+  /* Remove hover effects */
+  *:hover {
+    transition: none !important;
+  }
+
+  /* Evita quebra ruim */
+  h1, h2, h3, h4, h5 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .card,
+  .timeline-item,
+  .course-item,
+  section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Ajuste de fundo dos cards */
+  .card {
+    background: white !important;
+    border: 1px solid #ddd !important;
+  }
+
+  /* Skill tags mais limpas no papel */
+  .skill-tags .badge {
+    border: 1px solid #000 !important;
+    color: #000 !important;
+    background: transparent !important;
+  }
+
+  /* Links sem cor azul no papel */
+  a {
+    color: black !important;
+    text-decoration: none !important;
+  }
+
+  /* Footer simplificado */
+  .footer {
+    background: #000 !important;
+    color: white !important;
+  }
+
+  /* Remove elementos desnecessários se existirem */
+  nav,
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  /* Página A4 */
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  /* Evita cortes estranhos */
+  img {
+    max-width: 100%;
+    break-inside: avoid;
+  }
+
+  /* Ajusta espaçamento geral */
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
